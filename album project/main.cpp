@@ -32,7 +32,7 @@ public:
             }
             temp->next = newPhoto;
         }
-        cout << "✅ Đã thêm ảnh.\n";
+        cout << "Đã thêm ảnh.\n";
     }
 
     // Xóa ảnh theo mô tả
@@ -47,7 +47,7 @@ public:
                     head = temp->next;
                 }
                 delete temp;
-                cout << "🗑️  Đã xóa ảnh.\n";
+                cout << " Đã xóa ảnh.\n";
                 return;
             }
             prev = temp;
@@ -59,7 +59,7 @@ public:
     // Hiển thị tất cả ảnh
     void displayAll() {
         if (!head) {
-            cout << "📁 Album rỗng.\n";
+            cout << " Album rỗng.\n";
             return;
         }
 
